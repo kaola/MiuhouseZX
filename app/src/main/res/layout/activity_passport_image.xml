@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.miuhouse.zxcommunity.widget.RoundLinearLayout
+        android:id="@+id/roundlinear_passport_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="4dp"
+        app:rv_strokeColor="@color/cut_line"
+        app:rv_strokeWidth="2px">
+
+        <com.miuhouse.zxcommunity.widget.RoundTextView
+            android:id="@+id/tv_property_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_20dp"
+            android:text="万马奔腾小区 A栋302C"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp"
+            app:rv_backgroundColor="@color/btn_red"
+            app:rv_cornerRadius_TL="4dp"
+            app:rv_cornerRadius_TR="4dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            android:text="尊敬的叶先生:"
+            android:textColor="@color/text_black_57"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:text="您的访客通行证已申请通过，请在2015-11-26凭此通行证向门岗申请放行。"
+            android:textColor="@color/text_black_57"
+            android:textSize="@dimen/text_13sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            android:text="谢谢您的配合!"
+            android:textColor="@color/text_black_57"
+            android:textSize="@dimen/text_13sp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cut_line"
+
+            />
+
+
+        <com.miuhouse.zxcommunity.widget.RoundTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/margin_10dp"
+            android:text="备注:1.到达小区向门卫出示通行证即可放行\n\t\t\t\t2.此凭证只可当日使用"
+            android:textColor="@color/text_black_64"
+            android:textSize="@dimen/text_12sp"
+            app:rv_cornerRadius_BL="4dp"
+            app:rv_cornerRadius_BR="4dp" />
+    </com.miuhouse.zxcommunity.widget.RoundLinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.miuhouse.zxcommunity.widget.RoundTextView
+            android:id="@+id/btn_share_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_margin="@dimen/margin_10dp"
+            android:text="微信好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"
+            app:rv_backgroundPressColor="@color/btn_tint_green"
+            app:rv_cornerRadius="4dp"
+            app:rv_strokeColor="@color/cut_line"
+            app:rv_strokeWidth="2px"
+            android:gravity="center"
+       app:rv_backgroundColor="@color/btn_green"
+            />
+
+        <com.miuhouse.zxcommunity.widget.RoundTextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_background"
+            android:padding="15dp"
+            android:text="保存到手机"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_15"
+            app:rv_backgroundPressColor="#d1d1d1"
+            app:rv_cornerRadius="4dp"
+            app:rv_strokeColor="@color/cut_line"
+            app:rv_strokeWidth="2px"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+</LinearLayout>

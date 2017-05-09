@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/home_xuqiu_ico_quyu"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="区域"
+            android:textColor="@color/text_black_82"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@android:color/transparent"
+            android:text="选择区域"
+            android:textColor="@color/edittext_input"
+            android:textSize="@dimen/text_14sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/home_xuqiu_ico_jiage"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="价格"
+            android:textColor="@color/text_black_82"
+            android:textSize="@dimen/text_14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="选择价格"
+            android:textColor="@color/edittext_input"
+            android:textSize="@dimen/text_15"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_house_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/home_xuqiu_ico_huxing"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="户型"
+            android:textColor="@color/text_black_82"
+            android:textSize="@dimen/text_14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_house_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="选择户型"
+            android:textColor="@color/edittext_input"
+
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+</LinearLayout>

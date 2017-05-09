@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_pure"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_17sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View android:layout_below="@id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cut_line"/>
+
+    <LinearLayout android:id="@+id/poiLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_pure"
+        android:orientation="horizontal">
+        <RadioGroup android:id="@+id/map_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="5dp">
+
+            <RadioButton android:id="@+id/radio_bus"
+                android:drawableTop="@drawable/selector_map_radiobutton_bus"
+                android:text="交通"
+                style="@style/map_radio"/>
+
+            <RadioButton android:id="@+id/radio_edu"
+                android:drawableTop="@drawable/selector_map_radiobutton_edu"
+                android:text="教育"
+                style="@style/map_radio"/>
+
+            <RadioButton android:id="@+id/radio_shop"
+                android:drawableTop="@drawable/selector_map_radiobutton_shop"
+                android:text="商业"
+                style="@style/map_radio"/>
+
+            <RadioButton android:id="@+id/radio_hospital"
+                android:drawableTop="@drawable/selector_map_radiobutton_hospital"
+                android:text="医疗"
+                style="@style/map_radio"/>
+
+            <RadioButton android:id="@+id/radio_subway"
+                android:drawableTop="@drawable/selector_map_radiobutton_subway"
+                android:text="地铁"
+                style="@style/map_radio"/>
+
+            <RadioButton android:id="@+id/radio_bank"
+                android:drawableTop="@drawable/selector_map_radiobutton_bank"
+                android:text="银行"
+                style="@style/map_radio"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_above="@id/poiLayout"
+        android:layout_below="@id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

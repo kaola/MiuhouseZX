@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">瞄房正兴社区</string>
+    <string name="action_settings">settings</string>
+    <string name="information_verify">资料未验证</string>
+    <string name="buy_house_manage">售房管理</string>
+    <string name="renting_manage">租房管理</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="share_frient">分享给朋友</string>
+    <string name="feedback">意见反馈</string>
+    <string name="setting">设置</string>
+    <string name="direction_for_use">使用说明</string>
+    <string name="my_need">我的需求</string>
+    <string name="loading">正在加载...</string>
+    <string name="user_not_login">请先登录账户</string>
+    <string name="house_submit_failed">提交时出问题了，待会再来试试吧</string>
+    <string name="verifycode_sent">验证码已发送</string>
+    <string name="loading_failed">加载失败</string>
+    <string name="request_failed">请求失败</string>
+    <string name="login_failed">登录账户失败</string>
+    <string name="logout_error">登出异常</string>
+    <string name="login_success">登录成功</string>
+    <string name="location_error">定位失败</string>
+    <string name="property">小区</string>
+    <string name="coupon">优惠券</string>
+    <string name="express">快递代收</string>
+
+    <string name="property_kaifashang">开发商</string>
+    <string name="property_kaipanshijian">开盘时间</string>
+    <string name="property_jioafangshijan">交房时间</string>
+    <string name="property_wuyeleixing">物业类型</string>
+    <string name="property_chanquannianxian">产权年限</string>
+    <string name="property_jianzhuleixing">建筑类型</string>
+    <string name="property_zhuangxiuqingkuang">装修情况</string>
+    <string name="property_jianzhumianji">建筑面积</string>
+    <string name="property_zhandimianji">占地面积</string>
+    <string name="property_rongjilv">容积率</string>
+    <string name="property_lvhualv">绿化率</string>
+    <string name="property_guihuahushu">规划户数</string>
+    <string name="property_cheweishu">车位数</string>
+    <string name="property_wuyegongsi">物业公司</string>
+    <string name="property_wuyefei">物业费</string>
+    <string name="property_shoulouchu">售楼处</string>
+    <string name="request_sent_successfully">请求发送成功</string>
+</resources>

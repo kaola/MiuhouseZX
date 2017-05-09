@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF5839"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.miuhouse.zxcommunity.widget.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/login_ico_zhanghao" />
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号码"
+                android:phoneNumber="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/edittext_default"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@mipmap/login_icon_qingchu"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cut_line" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/white"
+
+            >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/login_ico_mima" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="密码"
+                android:password="true"
+                android:textColor="@color/edittext_input"
+                android:textColorHint="@color/edittext_default"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/img_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@mipmap/login_icon_qingchu"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.miuhouse.zxcommunity.widget.RoundLinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+        <com.miuhouse.zxcommunity.widget.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="4dp">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:background="@null"
+                android:hint="验证码"
+                android:textColor="@color/edittext_input"
+                android:textColorHint="@color/edittext_default"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/img_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@mipmap/login_icon_qingchu"
+                android:visibility="gone"
+
+                />
+        </com.miuhouse.zxcommunity.widget.RoundLinearLayout>
+
+        <com.miuhouse.zxcommunity.widget.RoundTextView
+            android:id="@+id/btn_send_code"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:gravity="center"
+            android:text="发送验证码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_13sp"
+            app:rv_backgroundColor="#66ffffff"
+            app:rv_cornerRadius="4dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/register_btn"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_15" />
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawablePadding="-2dp"
+                android:drawableTop="@mipmap/nav_ico_shouye"
+                android:gravity="center"
+                android:onClick="showFragment"
+                android:padding="5dp"
+                android:text="首页"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawablePadding="-2dp"
+                android:drawableTop="@mipmap/nav_ico_map"
+                android:gravity="center"
+                android:onClick="showFragment"
+                android:padding="5dp"
+                android:text="地图"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawablePadding="-2dp"
+                android:drawableTop="@mipmap/nav_ico_xiaoxi"
+                android:gravity="center"
+                android:onClick="showFragment"
+                android:padding="5dp"
+                android:text="消息"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_14sp" />
+
+            <com.miuhouse.zxcommunity.widget.MyDot
+                android:id="@+id/unreadDot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="3dp"
+                app:dotColor="@color/login_bg_red" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawablePadding="-2dp"
+                android:drawableTop="@mipmap/nav_ico_me"
+                android:gravity="center"
+                android:onClick="showFragment"
+                android:padding="5dp"
+                android:text="我"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/text_14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_fragment_contanier"
+        android:layout_above="@id/ll_bottom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/ll_bottom_bt"
+        android:background="@color/cut_line" />
+</RelativeLayout>

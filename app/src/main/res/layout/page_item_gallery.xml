@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <com.miuhouse.zxcommunity.photo.PhotoView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false" />
+
+    <ProgressBar
+        android:id="@+id/anim_progress"
+        style="@style/loading"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

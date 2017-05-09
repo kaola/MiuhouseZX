@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_pure"
+        android:fitsSystemWindows="true"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Title"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_17sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/houseArea"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_text_white_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="区域"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/houseLayout"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_text_white_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="户型"
+                android:textColor="@color/text_dark_black"
+                android:textSize="@dimen/text_14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include android:id="@+id/nonetwork"
+            layout="@layout/nonetworkview" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/houseList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_pure"
+                android:choiceMode="singleChoice"
+                android:divider="@null" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <com.miuhouse.zxcommunity.widget.MyRoundImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/selectImageSize"
+            android:layout_height="@dimen/selectImageSize"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            app:radius="8dp"
+            app:type="round"/>
+
+        <TextView android:id="@+id/uploading"
+            android:layout_width="@dimen/selectImageSize"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:text="正在上传"
+            android:background="@drawable/shape_selectimage"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/checkmark"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/selector_shanchu"/>
+</RelativeLayout>

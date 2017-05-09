@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cv_member"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="88dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--cardview:cardElevation="1dp">-->
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/houseWraper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_house"
+                        android:layout_width="@dimen/image_house_item_width"
+                        android:layout_height="@dimen/image_house_item_height"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/default_error"
+                        android:scaleType="fitXY"
+                        android:layout_margin="10dp"/>
+
+                    <LinearLayout android:id="@+id/houseBrief"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_house"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/houseTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:text="标题"
+                            android:layout_marginBottom="4dp"
+                            android:textColor="@color/text_dark_black"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/rv_houseInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/houseTitle"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="4dp">
+
+                            <ImageView
+                                android:id="@+id/locIcon"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@mipmap/icon_location" />
+
+                            <TextView
+                                android:id="@+id/houseLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/locIcon"
+                                android:text="位置"
+                                android:textColor="@color/text_sub_title"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/houseArea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/houseLocation"
+                                android:text="大小"
+                                android:textColor="@color/text_sub_title"
+                                android:textSize="@dimen/text_13sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/estateName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:singleLine="true"
+                            android:text="小区名"
+                            android:textColor="@color/text_sub_title"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/houseRight"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <TextView android:id="@+id/houseStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/text_grey" />
+
+                        <TextView
+                            android:id="@+id/housePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="750万/套"
+                            android:textColor="@color/text_red"
+                            android:textSize="@dimen/text_16sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/check"
+                    android:layout_toRightOf="@id/houseWraper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView android:id="@+id/soldOut"
+                        android:layout_gravity="right"
+                        android:layout_width="@dimen/soldOut_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_button_red_background"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center"
+                        android:text="下架"
+                        android:textColor="@color/white_pure"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    <!--</android.support.v7.widget.CardView>-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/cut_line" />
+</LinearLayout>

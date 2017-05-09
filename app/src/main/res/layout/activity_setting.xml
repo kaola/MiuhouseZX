@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relative_property"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@android:color/white">-->
+
+        <!--<TextView-->
+            <!--style="@style/user_info_text"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="清理缓存" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_property"-->
+            <!--style="@style/user_info_text_v"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_toLeftOf="@+id/img_property" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_property"-->
+            <!--style="@style/user_info_imageview" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/cut_line" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/user_info_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="消息通知" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchcompat_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:gravity="center"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/cut_line" />
+
+    <RelativeLayout
+        android:id="@+id/relative_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/user_info_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="关于瞄房社区" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            style="@style/user_info_text_v"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_about" />
+
+        <ImageView
+            android:id="@+id/img_about"
+            style="@style/user_info_imageview" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line" />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/selector_button_red_background"
+        android:gravity="center"
+        android:text="注销账号"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_15" />
+
+</LinearLayout>

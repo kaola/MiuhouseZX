@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#e8e8e8"/>
+            <stroke android:width="0.5dp" android:color="@color/border_notification"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/white_pure"/>
+            <stroke android:width="0.5dp" android:color="@color/border_notification"/>
+        </shape>
+    </item>
+</selector>

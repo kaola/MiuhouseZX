@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5dp"
+    android:paddingLeft="@dimen/margin_10dp"
+    android:paddingRight="@dimen/margin_10dp"
+    android:paddingTop="@dimen/margin_5dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_head"
+                android:layout_width="96dp"
+                android:layout_height="101dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_bottom_left="@dimen/card_corner_radius"
+                app:riv_corner_radius_bottom_right="0dp"
+                app:riv_corner_radius_top_left="@dimen/card_corner_radius"
+                app:riv_corner_radius_top_right="0dp" />
+
+
+            <FrameLayout
+                android:id="@+id/frame_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/img_head"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_toRightOf="@+id/img_head">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="20元"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/text_24sp" />
+
+                <ImageView
+                    android:id="@+id/img_is_outofdate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/me_youhuiq_ico_jieshu" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_top"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/img_head"
+                android:text="代金券"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/tv_usefultime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/img_head"
+                android:textColor="@color/text_black_64"
+                android:textSize="@dimen/text_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_usefultime"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/img_head"
+                android:text="仅限此店使用"
+                android:textColor="@color/text_black_64"
+                android:textSize="@dimen/text_12sp"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

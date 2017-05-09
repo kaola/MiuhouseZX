@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content"
+    android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/titlebar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white_pure"
+      android:elevation="5dp"
+      android:fitsSystemWindows="true"
+      >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Title"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/text_17sp"/>
+
+
+  </android.support.v7.widget.Toolbar>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/btn_province"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/et_build"
+          android:layout_width="0dp"
+          android:layout_height="42dp"
+          android:layout_marginLeft="30dp"
+          android:background="@android:color/white"
+          android:gravity="center"
+          android:layout_weight="4"
+          android:textColor="@color/text_black"
+          android:textSize="@dimen/text_16sp"
+          android:paddingLeft="@dimen/margin_10dp"
+          android:paddingRight="@dimen/margin_10dp"
+          />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/margin_10dp"
+          android:text="栋"
+          android:textColor="@color/text_black"
+          android:textSize="@dimen/text_16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_city"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/etunit"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="10dp"
+          android:layout_weight="4"
+          android:background="@android:color/white"
+          android:gravity="center"
+          android:textColor="@color/text_black"
+          android:textSize="@dimen/text_16sp"/>
+
+      <TextView
+
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/margin_10dp"
+          android:layout_marginRight="30dp"
+          android:text="室"
+          android:textColor="@color/text_black"
+          android:textSize="@dimen/text_16sp"/>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_guess_bg"
+        android:paddingBottom="10dp">
+
+        <com.miuhouse.zxcommunity.widget.MyRoundImageView
+            android:id="@+id/iv_house"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_error"
+            app:type="round"
+            app:side="top"
+            app:radius="3dp"/>
+
+        <TextView android:id="@+id/houseName"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="uasfa"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/shape_guess_txt"/>
+
+        <TextView android:id="@+id/price"
+            android:layout_below="@id/iv_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_red"
+            android:layout_margin="10dp"/>
+
+        <TextView android:id="@+id/desc"
+            android:layout_below="@id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="@color/text_dark_black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

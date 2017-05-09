@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_empty"
+    >
+
+    <!--android:background="@color/background_content"-->
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/network_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<-->
+
+        <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--android:textColor="@color/text_color_646464"-->
+        <!--android:textSize="@dimen/text_16sp"-->
+        <!--android:paddingBottom="@dimen/padding_16dp"-->
+        <!--android:src="@mipmap/teshu_ico_hezi"-->
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="网络不给力哦"
+            android:textColor="@color/text_dark_black"
+            />
+        <TextView
+            android:id="@+id/tv_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_main"
+            android:layout_centerHorizontal="true"
+            android:text="请检查网络后再试"
+            android:textColor="@color/text_sub_title"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            />
+        <!--android:paddingTop="@dimen/padding_8dp"-->
+        <!--android:textColor="@color/text_color_a4a4a4"-->
+        <!--android:textSize="@dimen/text_14sp"-->
+        <ImageView
+            android:id="@+id/empty_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_main"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:src="@mipmap/ico_no_network"
+            />
+     <!--   android:background="@drawable/selector_empty_action"
+        android:textColor="@color/text_color_646464"
+        android:textSize="@dimen/text_15sp"-->
+        <ImageView
+            android:id="@+id/iv_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/ico_jiazai"
+            android:layout_below="@+id/tv_subtext"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

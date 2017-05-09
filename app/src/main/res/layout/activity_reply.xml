@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_pure"
+        android:elevation="5dp"
+        android:fitsSystemWindows="true"
+        app:theme="@style/ToolBarStyle_RedSetting">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_17sp" />
+
+        <TextView android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:text="提交"
+            android:padding="10dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:hint="把想说的反馈给物业吧"
+        android:padding="5dp"
+        android:textColorHint="@color/text_grey"
+        android:textColor="@color/text_black"
+        android:background="@color/white"
+        android:gravity="top|left"/>
+
+</LinearLayout>

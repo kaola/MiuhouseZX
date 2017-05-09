@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF5839"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.miuhouse.zxcommunity.widget.MyRoundImageView
+        android:id="@+id/image"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher"
+        app:radius="4dp"
+        app:side="all"
+        app:type="round" />
+
+    <com.miuhouse.zxcommunity.widget.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/login_ico_zhanghao" />
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号码"
+                android:textColor="@color/edittext_input"
+                android:textColorHint="@color/edittext_default"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@mipmap/login_icon_qingchu"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cut_line" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/login_ico_mima" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="密码"
+                android:password="true"
+                android:textColor="@color/edittext_input"
+                android:textColorHint="@color/edittext_default"
+                android:textSize="@dimen/text_15" />
+
+            <ImageView
+                android:id="@+id/img_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@mipmap/login_icon_qingchu"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.miuhouse.zxcommunity.widget.RoundLinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_btn"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_15" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="100dp"
+        android:text="注册瞄房社区帐号"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_14sp" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:text="忘记密码?"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_13sp" />
+</LinearLayout>
